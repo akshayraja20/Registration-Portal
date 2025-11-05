@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Portal</title>
+    
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(151, 219, 237);
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        :placeholder-shown {
+            text-align: center;
+        }
+
+        header,
+        footer {
+            background-color: rgb(58, 93, 93);
+            color: whitesmoke;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .navitem {
+            display: inline;
+            padding: 10px;
+            margin-right: 30px;
+
+        }
+
+        .navitem a {
+            text-decoration: none;
+            color: rgb(213, 234, 243);
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: auto;
+            padding: 5px;
+            background-color: black;
+        }
+
+        .registerform {
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            /* text-align: center; */
+        }
+
+        .employeetable {
+            text-align: center;
+            /* margin-bottom: 10px; */
+
+        }
+
+        table {
+            margin-right: auto;
+            margin-left: auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: red;
+            color: azure;
+        }
+
+        tr {
+            background-color: rgb(244, 225, 225);
+            cursor: pointer;
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 3px;
+        }
+
+        .contactus {
+            text-align: center;
+        }
+
+        #sub {
+            background-color: rgb(10, 146, 76);
+            color: azure;
+            border: none;
+            margin-left: 80px;
+        }
+
+        #res {
+            background-color: rgb(10, 146, 76);
+            color: azure;
+            border: none;
+            margin-left: 60px;
+            cursor: progress;
+        }
+
+        #mail {
+            /* text-decoration: dotted; */
+            /* color: rgb(0, 64, 227); */
+            font-family: cursive;
+        }
+
+        #wel {
+            font-family: cursive;
+        }
+
+        #state {
+            background-color: rgb(96, 42, 46);
+            color: antiquewhite;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        #Country {
+            background-color: rgb(96, 42, 46);
+            color: antiquewhite;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        #role {
+            background-color: rgb(96, 42, 46);
+            color: antiquewhite;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        #inter {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(58, 93, 93);
+            color: rgba(249, 249, 255, 0.952);
+            padding: 10px;
+            /* cursor: pointer; */
+            /* text-decoration: none; */
+            font-weight: bold;
+            /* text-underline-offset: none; */
+
+            /* margin-right: 1300px; */
+            /* height: 100px; */
+
+        }
+
+        a {
+            text-decoration: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <marquee behavior="slide" direction="" scrollamount="10" width="100%"><a href="akshay.html" target="_blank">
+                <h1 id="inter">Gupta Group Of Companies</h1>
+            </a></marquee>
+
+        <marquee behavior="scroll" direction="" scrollamount="">
+            <h2 id="wel"> Welcome to Company Registration Portal</h2>
+        </marquee>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="#employee-registration">Employee Registration</a></li>
+                <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+                <li class="navitem"><a href="#contact-us">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="/computers-discussion-employees-indoors.webp" width="100%" height="auto" alt="">
+
+    <section id="employee-registration" class="registerform">
+        <h2>Employee Registration</h2>
+        <p>Fill the below form to register as <em>employee.</em></p>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name"> <br> <br>
+
+            <label for="f-name">Father's name:</label>
+            <input type="text" id="f-name" placeholder="Enter your father's name"> <br> <br>
+
+            <label for="m-name">Mother's Name:</label>
+            <input type="text" id="m-name" placeholder="Enter your mother's name"> <br> <br>
+
+            <label for="contact">Contact no.:</label>
+            <input type="tel" id="contact" placeholder="Contact No."><br> <br>
+
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" placeholder="Enter your email"> <br> <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password"> <br> <br>
+
+            <label for="gender">Select Gender:</label>
+            <input type="radio" value="male" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" value="female" id="female" name="gender">
+            <label for="female">Female</label> <br><br>
+
+            <label for="dob">Enter your DOB:</label>
+            <input type="date" id="dob" placeholder=""> <br> <br>
+
+            <label for="age">Enter your Age:</label>
+            <input type="number" id="age" placeholder="Enter your age"> <br> <br>
+
+            <label for="role">Select Role:</label>
+            <select name="" id="role">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+                <option value="HR Representive">HR Representive</option>
+                <option value="Senior Software Engineer">Senior Software Engineer</option>
+                <option value="AI Engineer">AI Engineer</option>
+                <option value="ML Engineer">ML Engineer</option>
+                <option value="Database Administrator">Database Administrator</option>
+                <option value="Full Stack Developer">Full Stack Developer</option>
+                <option value="Data Analyast">Data Analyast</option>
+                <option value="UI Developer">UI Developoer</option>
+                <option value="System Engineer">System Engineer</option>
+                <option value="Designer">Designer</option>
+            </select> <br> <br>
+
+            <label for="Country">Select Your Country:</label>
+            <select name="" id="Country">
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Australlia">Australlia</option>
+                <option value="Afganistan">Afganistan</option>
+                <option value="China">China</option>
+                <option value="Russia">Russia</option>
+                <option value="Maleshiya">Maleshiya</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Sudan">Sudan</option>
+                <option value="USA">USA</option>
+                <option value="Japan">Japan</option>
+            </select> <br> <br>
+
+            <label for="state">Select Your State:</label>
+            <select name="" id="state">
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnatka">Karnatka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharastra">Maharastra</option>
+            </select> <br> <br>
+
+            <label for="photo">Upload Your Photo:</label>
+            <input type="file" value="File" id="photo"> <br> <br>
+
+            <label for="file">Upload Your Resume:</label>
+            <input type="file" value="File" id="file"> <br> <br>
+
+            <label for="terms">I agree on the <a href="clickhere.html">terms and conditions.</a></label>
+            <input type="checkbox" id="terms" value="agree">
+            <br> <br>
+
+            <input type="submit" id="sub">
+            <input type="reset" id="res">
+        </form>
+    </section>
+
+    <section id="employee-directory" class="employeetable">
+        <h2>Employee Directory</h2>
+        <p>List of all registered <em>employees</em></p>
+        <table>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Employee Role</th>
+            </tr>
+            <tr>
+                <td>290</td>
+                <td>Akshay Gupta </td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>288</td>
+                <td>Anshika Roy</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>340</td>
+                <td>Abhishek Dixit</td>
+                <td>AI Engineer</td>
+            </tr>
+            <tr>
+                <td>244</td>
+                <td>Pooja Sharma</td>
+                <td>Senior Software Engineer</td>
+            </tr>
+            <tr>
+                <td>416</td>
+                <td>Anjali Gupta </td>
+                <td>ML Engineer</td>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>Saurav Shukla</td>
+                <td>Data Engineer</td>
+            </tr>
+            <tr>
+                <td>465</td>
+                <td>Tiger Shroff</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>599</td>
+                <td>Katrina Kaif</td>
+                <td>HR Representive</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>Ananya Pandey</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>230</td>
+                <td>Varun Roy</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>Shubham Jha</td>
+                <td> Senior Software Engineer</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Jackie Singh</td>
+                <td>Product Manager</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact-us" class="contactus">
+        <h2>Contact Us</h2>
+        <p>You can contact us at <a href="mailto:akshaybirpur02@gmail.com" id="mail"
+                target="_blank"><b>akshaybirpur02@gmail.com</b></a> or
+            visit us between
+            <b>10AM-6PM</b>
+        </p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1917.8302962607243!2d87.00963229983105!3d26.515419095405836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1729861267127!5m2!1sen!2sin"
+            width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <footer>
+        <p>&copy; 2024 copyright all rights reserved Gupta_GroupOfCompanies</p>
+    </footer>
+    <script>
+        alert("Hello....! Welcome to our Website")
+        let name = prompt("What is your name?");
+        //console.log(name)
+    </script>
+</body>
+
+</html>
